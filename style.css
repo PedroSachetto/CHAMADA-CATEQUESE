@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+header {
+    position: relative;
+
+    background: #000000;
+    color: white;
+
+    padding: 35px 30px;
+
+    min-height: 190px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 15px;
+}
+
+.logo {
+    position: absolute;
+
+    right: 20px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 150px;
+    height: 180px;
+
+    object-fit: contain;
+}
+
+.home main {
+    padding: 25px 20px;
+}
+
+.home h2 {
+    text-align: center;
+
+    font-size: 24px;
+
+    margin-bottom: 20px;
+}
+
+.turmas {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.turma {
+    text-decoration: none;
+
+    color: #000;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    padding: 22px 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+
+    transition: 0.3s ease;
+}
+
+.turma span {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.turma small {
+    font-size: 13px;
+    color: #666;
+}
+
+.turma:hover {
+    transform: translateY(-5px);
+
+    background: #ffffff;
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.turma:active {
+    transform: scale(0.97);
+}
+
+@media screen and (max-width:768px) {
+    
+}
